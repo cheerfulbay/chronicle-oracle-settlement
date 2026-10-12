@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#112240"/>
+      <stop offset="100%" stop-color="#020c1b"/>
+    </linearGradient>
+    <linearGradient id="oracleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64ffda"/>
+      <stop offset="50%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#7928ca"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#233554" stroke-width="0.8" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#bg)"/>
+  <rect width="1200" height="380" fill="url(#grid)"/>
+
+  <circle cx="200" cy="190" r="140" fill="#64ffda" opacity="0.1" filter="blur(50px)"/>
+  <circle cx="1000" cy="190" r="140" fill="#7928ca" opacity="0.1" filter="blur(50px)"/>
+
+  <!-- Logo Icon -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="130" height="130" rx="28" fill="#112240" stroke="url(#oracleGrad)" stroke-width="3"/>
+    <circle cx="65" cy="65" r="32" fill="none" stroke="#64ffda" stroke-width="3"/>
+    <circle cx="65" cy="65" r="12" fill="#00b4d8"/>
+    <line x1="65" y1="20" x2="65" y2="33" stroke="#64ffda" stroke-width="3"/>
+    <line x1="65" y1="97" x2="65" y2="110" stroke="#64ffda" stroke-width="3"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="265" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+    Chronicle Oracle Settlement
+  </text>
+  <text x="265" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="400" fill="#94a3b8">
+    Multi-Source Oracle Price Aggregator &amp; Anti-Flash-Loan Settlement Protocol
+  </text>
+
+  <!-- Badges -->
+  <g transform="translate(265, 235)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="#1e293b" stroke="#64ffda" stroke-width="1.2"/>
+    <text x="65" y="20" font-family="monospace" font-size="12" font-weight="600" fill="#64ffda" text-anchor="middle">Chainlink / Pyth</text>
+
+    <rect x="145" y="0" width="135" height="30" rx="15" fill="#1e293b" stroke="#00b4d8" stroke-width="1.2"/>
+    <text x="212" y="20" font-family="monospace" font-size="12" font-weight="600" fill="#00b4d8" text-anchor="middle">Solidity 0.8.24</text>
+
+    <rect x="295" y="0" width="125" height="30" rx="15" fill="#1e293b" stroke="#34d399" stroke-width="1.2"/>
+    <text x="357" y="20" font-family="monospace" font-size="12" font-weight="600" fill="#34d399" text-anchor="middle">Anti-Flash-Loan</text>
+
+    <rect x="435" y="0" width="115" height="30" rx="15" fill="#1e293b" stroke="#c084fc" stroke-width="1.2"/>
+    <text x="492" y="20" font-family="monospace" font-size="12" font-weight="600" fill="#c084fc" text-anchor="middle">Apache-2.0</text>
+  </g>
+</svg>
